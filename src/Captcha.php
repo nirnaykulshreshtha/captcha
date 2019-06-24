@@ -491,6 +491,7 @@ class Captcha
 
             $attrs_str .= $attr . '="' . $value . '" ';
         }
+        // this is my custom repo
         return new HtmlString('<img src="' . $this->src($config) . '" ' . trim($attrs_str) . '>');
     }
 }
